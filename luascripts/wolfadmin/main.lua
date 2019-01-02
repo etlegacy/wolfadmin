@@ -147,7 +147,12 @@ function et_InitGame(levelTime, randomSeed, restartMap)
     et.trap_SendConsoleCommand(et.EXEC_APPEND, "sets mod_wolfadmin "..wolfa_getVersion()..";")
 
     outputDebug("Module "..wolfa_getVersion().." ("..wolfa_getRelease()..") loaded successfully. Created by Timo 'Timothy' Smit.")
-    
+
+    -- Legacy integration
+    if et.trap_Cvar_Get("fs_game") == "legacy" then
+        require("legacydb")
+    end
+
     events.trigger("onGameInit", levelTime, randomSeed, (restartMap == 1))
 end
 
