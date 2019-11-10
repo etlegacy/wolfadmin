@@ -25,7 +25,7 @@ admin = "admin.log"
 
 [omnibot]
 minbots = -1
-maxbots = 10
+maxbots = 16
 
 [admin]
 history = 1
@@ -38,7 +38,7 @@ selection = 0
 interval = 30
 
 [game]
-announcerevives = 1
+announcerevives = 0
 
 [voting]
 timeout = 0
@@ -60,9 +60,3 @@ bots = 1
 
 [records]
 bots = 0
-
-[sprees]
-file = "sprees.toml"
-messages = 7
-sounds = 3
-records = 1
