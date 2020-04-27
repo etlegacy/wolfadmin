@@ -32,7 +32,6 @@ local commands
 local bots
 local fireteams
 local game
-local sprees
 local teams
 local voting
 
@@ -123,7 +122,6 @@ function et_InitGame(levelTime, randomSeed, restartMap)
     bots = wolfa_requireModule("game.bots")
     game = wolfa_requireModule("game.game")
     fireteams = wolfa_requireModule("game.fireteams")
-    sprees = wolfa_requireModule("game.sprees")
     teams = wolfa_requireModule("game.teams")
     voting = wolfa_requireModule("game.voting")
 

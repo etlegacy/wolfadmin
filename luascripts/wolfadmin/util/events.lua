@@ -130,9 +130,6 @@ events.add("onPlayerRevive")
 
 events.add("onPlayerSkillUpdate")
 
-events.add("onPlayerSpree")
-events.add("onPlayerSpreeEnd")
-
 events.add("onServerCommand")
 
 return events

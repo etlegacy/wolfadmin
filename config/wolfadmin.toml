@@ -57,6 +57,3 @@ file = "rules.toml"
 file = "greetings.toml"
 area = 3
 bots = 1
-
-[records]
-bots = 0
